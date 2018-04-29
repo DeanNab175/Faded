@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <title>Bootstrap 4 Layout</title>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+        <!-- Font Awesome -->
+        <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Boostrap -->
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+    <body>
+        <!-- ============== Header Section ============== -->
+        <header>
+            
+            <!-- Navigation Menu -->
+            <nav class="navbar navbar-expand-lg navbar-dark yb-main-menu fixed-top">
+                <div class="container">
+                    <a class="navbar-brand logo-brand yb-text-yellow" href="/">yurBusiness</a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Testimonials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- .container -->
+
+            </nav>
+            <!-- Navigation Menu End -->                                                         
+            
+            <!-- Slider -->
+            <div id="carouselExampleIndicators" class="carousel slide position-ralative" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="slider-image slide text-center text-white" style="background-image: url('../assets/images/slider-1.jpg');">
+                            <div class="yb-bg-overlay"></div>
+                            <div class="container h-100">
+                                <div class="row h-100 align-items-center">
+                                    <div class="col">
+                                        <div class="slider-text-block">
+                                            <div class="text">
+                                                <h1 class="display-4">Simple,Fresh & Unique Design</h1>
+                                                <p class="lead">Donec posuere augue venenatis</p>
+                                            </div><!-- .text -->
+                                            <div class="button mt-7">
+                                                <a class="btn btn-yb-blue btn-lg btn-font text-uppercase" href="#" role="button">show more</a>
+                                            </div><!-- .button -->
+                                        </div><!-- .slider-text-block -->
+                                    </div>
+                                </div><!-- .row -->
+                            </div>
+                        </div><!-- .slider-image -->
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="slider-image slide text-center text-white" style="background-image: url('../assets/images/slider-2.jpg');">
+                            <div class="yb-bg-overlay"></div>
+                            <div class="container h-100">
+                                <div class="row h-100 align-items-center">
+                                    <div class="col">
+                                        <div class="slider-text-block">
+                                            <div class="text">
+                                                <h1 class="display-4">Simple,Fresh & Unique Design</h1>
+                                                <p class="lead">Donec posuere augue venenatis</p>
+                                            </div><!-- .text -->
+                                            <div class="button mt-7">
+                                                <a class="btn btn-yb-blue btn-lg btn-font text-uppercase" href="#" role="button">show more</a>
+                                            </div><!-- .button -->
+                                        </div><!-- .slider-text-block -->
+                                    </div>
+                                </div><!-- .row -->
+                            </div>
+                        </div><!-- .slider-image -->
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="slider-image slide text-center text-white" style="background-image: url('../assets/images/slider-3.jpg');">
+                            <div class="yb-bg-overlay"></div>
+                            <div class="container h-100">
+                                <div class="row h-100 align-items-center">
+                                    <div class="col">
+                                        <div class="slider-text-block">
+                                            <div class="text">
+                                                <h1 class="display-4">Simple,Fresh & Unique Design</h1>
+                                                <p class="lead">Donec posuere augue venenatis</p>
+                                            </div><!-- .text -->
+                                            <div class="button mt-7">
+                                                <a class="btn btn-yb-blue btn-lg btn-font text-uppercase" href="#" role="button">show more</a>
+                                            </div><!-- .button -->
+                                        </div><!-- .slider-text-block -->
+                                    </div>
+                                </div><!-- .row -->
+                            </div>
+                        </div><!-- .slider-image -->
+                    </div>
+                </div><!-- .carousel-inner -->
+
+                <div class="container">
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div><!-- .container -->
+            </div>
+            <!-- Slider End -->
+
+        </header>
+        <!-- ============== Header Section End ============== -->
+
+        <!-- ============== Main Section ============== -->
+        <main>
+            <!-- What we offer section -->
+            <section id="offer" class="py-6">
+
+                <div class="container">
+                    <div class="heading text-center mb-6">
+                        <h2 class="text-uppercase section-title yb-text-blue">What we offer</h2>
+                        <p class="section-text yb-text-dark-blue">Vestibulum elementum ex ullamcorper ligula vulputate</p>
+                    </div><!-- .heading -->
+
+                    <div class="row">
+                        <div class="col-12 col-sm-6 my-3">
+
+                            <div class="row">
+                                <div class="col-sm-1 text-sm-left text-center">
+                                    <i class="fa fa-wrench yb-text-yellow" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-sm-11 text-sm-left text-center">
+                                    <h4 class="offer-heading yb-text-dark-blue">Vivamus tincidunt</h4>
+                                    <p class="offer-text yb-text-gray">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
+                                </div>
+                            </div><!-- .row -->
+
+                        </div>
+
+                        <div class="col-12 col-sm-6 my-3">
+
+                            <div class="row">
+                                <div class="col-sm-1 text-sm-left text-center">
+                                    <i class="fa fa-cart-arrow-down yb-text-blue" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-sm-11 text-sm-left text-center">
+                                    <h4 class="offer-heading yb-text-dark-blue">Etiam porttitor sagittis ipsum</h4>
+                                    <p class="offer-text yb-text-gray">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
+                                </div>
+                            </div><!-- .row -->
+                            
+                        </div>
+
+                        <div class="col-12 col-sm-6 my-3">
+
+                            <div class="row">
+                                <div class="col-sm-1 text-sm-left text-center">
+                                    <i class="fa fa-stack-exchange yb-text-blue" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-sm-11 text-sm-left text-center">
+                                    <h4 class="offer-heading yb-text-dark-blue">Vivamus tincidunt diam a iaculis</h4>
+                                    <p class="offer-text yb-text-gray">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
+                                </div>
+                            </div><!-- .row -->
+
+                        </div>
+
+                        <div class="col-12 col-sm-6 my-3">
+
+                            <div class="row">
+                                <div class="col-sm-1 text-sm-left text-center">
+                                    <i class="fa fa-television yb-text-blue" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-sm-11 text-sm-left text-center">
+                                    <h4 class="offer-heading yb-text-dark-blue">Donec metus augue</h4>
+                                    <p class="offer-text yb-text-gray">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
+                                </div>
+                            </div><!-- .row -->
+                            
+                        </div>
+
+                        <div class="col-12 col-sm-6 my-3">
+
+                            <div class="row">
+                                <div class="col-sm-1 text-sm-left text-center">
+                                    <i class="fa fa-bug yb-text-blue" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-sm-11 text-sm-left text-center">
+                                    <h4 class="offer-heading yb-text-dark-blue">Aliquam sed mollis</h4>
+                                    <p class="offer-text yb-text-gray">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
+                                </div>
+                            </div><!-- .row -->
+
+                        </div>
+
+                        <div class="col-12 col-sm-6 my-3">
+
+                            <div class="row">
+                                <div class="col-sm-1 text-sm-left text-center">
+                                    <i class="fa fa-globe yb-text-blue" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-sm-11 text-sm-left text-center">
+                                    <h4 class="offer-heading yb-text-dark-blue">Vestibulum placerat nisl quis</h4>
+                                    <p class="offer-text yb-text-gray">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
+                                </div>
+                            </div><!-- .row -->
+                            
+                        </div>
+
+                    </div><!-- .row -->
+
+                </div><!-- .container -->
+
+            </section><!-- #offer -->
+            <!-- What we offer section End -->
+
+            <!-- Who we are section -->
+            <section id="about" class="yb-yellow">
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 yb-bg-image-block" style="background-image: url('../assets/images/about1.jpg');">
+                            <!-- <img src="http://placeimg.com/640/480/people" alt="people"> -->
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-6 yb-text-block py-4 px-4 py-sm-5 px-sm-5 py-md-7 px-md-6">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-9">
+                                    <h2 class="text-uppercase section-title text-white">Who we are</h2>
+                                    <p class="section-text text-white my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dui massa, condimentum a nisl quis, tristique efficitur erat. Aenean ut suscipit urna. Donec efficitur tristique lobortis. Nullam eu efficitur lacus, et blandit tellus. Mauris viverra condimentum tellus vitae sollicitudin. Mauris quis mattis urna. Suspendisse auctor magna quis ipsum ultrices scelerisque. Vestibulum quis hendrerit enim. Aenean viverra aliquam ex, sed ornare risus porta in.</p>
+                                    <p class="section-text text-white my-4">Aenean ut suscipit urna. Donec efficitur tristique lobortis. Nullam eu efficitur lacus, et blandit tellus. Mauris viverra condimentum tellus vitae sollicitudin. Mauris quis mattis urna. Suspendisse auctor magna quis ipsum ultrices scelerisque. Vestibulum quis hendrerit enim. Aenean viverra aliquam ex, sed ornare risus porta in.</p>
+                                    <a class="btn btn-yb-yellow-burn btn-lg text-uppercase text-white btn-font mt-5 mb-3" href="#" role="button">Read more</a>
+                                </div>
+                            </div><!-- .row -->
+                        </div>
+                    </div><!-- .row -->
+                </div><!-- .container-fluid -->
+
+            </section><!-- #about -->
+            <!-- Who we are section End -->
+
+            <!-- See our work section -->
+            <section id="work" class="pb-3">
+
+                <div class="container">
+                    <div class="heading text-center mt-6">
+                        <h2 class="text-uppercase section-title yb-text-blue mb-0">See our work</h2>
+                        <p class="yb-section-title-icon yb-with-lines yb-text-yellow"><i class="fa fa-cog" aria-hidden="true"></i></p>
+                        <p class="section-text yb-text-dark-blue">Mauris euismod ac nulla vitae fermentum. Morbi ut mauris massa. Sed condimentum elit volutpat turpis sagittis, in scelerisque dui luctus. Nulla id suscipit velit, a maximus massa.</p>
+                    </div><!-- .heading -->
+                </div><!-- .container -->
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <div class="yb-filter-button-group my-5 text-center">
+                                <button class="btn btn-sm active" data-filter="*">All</button>
+                                <button class="btn btn-sm" data-filter=".web">Web</button>
+                                <button class="btn btn-sm" data-filter=".logo-design">Logo Design</button>
+                                <button class="btn btn-sm" data-filter=".wordpress">WordPress</button>
+                                <button class="btn btn-sm" data-filter=".ecommerce">E-Commerce</button>
+                            </div>
+                        </div>
+                    </div><!-- .row -->
+                </div><!-- .container -->
+                <div class="container-fluid p-0">
+                    <div class="row m-0">
+                        <div class="col p-0">
+
+                            <div class="grid">
+                                <div class="grid-sizer"></div>
+                                <div class="gutter-sizer"></div>
+                                <div class="grid-item web">
+                                    <div class="grid-item-content">
+                                        <div class="yb-overlay">
+                                            <div class="yb-icon-view mb-4"><span class="yb-circle-icon border border-white rounded-circle"><i class="fa fa-eye" aria-hidden="true"></i></span></div>
+                                            <div class="yb-excerpt">Labore et dolore magnam</div>
+                                            <div class="yb-cats">web</div>
+                                        </div>
+                                        <img src="assets/images/works/web-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="grid-item logo-design">
+                                    <div class="grid-item-content">
+                                        <div class="yb-overlay">
+                                            <div class="yb-icon-view mb-4"><span class="yb-circle-icon border border-white rounded-circle"><i class="fa fa-eye" aria-hidden="true"></i></span></div>
+                                            <div class="yb-excerpt">Labore et dolore magnam</div>
+                                            <div class="yb-cats">logo design</div>
+                                        </div>
+                                        <img src="assets/images/works/ld-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="grid-item wordpress">
+                                    <div class="grid-item-content">
+                                        <div class="yb-overlay">
+                                            <div class="yb-icon-view mb-4"><span class="yb-circle-icon border border-white rounded-circle"><i class="fa fa-eye" aria-hidden="true"></i></span></div>
+                                            <div class="yb-excerpt">Labore et dolore magnam</div>
+                                            <div class="yb-cats">wordpress</div>
+                                        </div>
+                                        <img src="assets/images/works/wp-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="grid-item ecommerce">
+                                    <div class="grid-item-content">
+                                        <div class="yb-overlay">
+                                            <div class="yb-icon-view mb-4"><span class="yb-circle-icon border border-white rounded-circle"><i class="fa fa-eye" aria-hidden="true"></i></span></div>
+                                            <div class="yb-excerpt">Labore et dolore magnam</div>
+                                            <div class="yb-cats">e-commerce</div>
+                                        </div>
+                                        <img src="assets/images/works/ec-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="grid-item web">
+                                    <div class="grid-item-content">
+                                        <div class="yb-overlay">
+                                            <div class="yb-icon-view mb-4"><span class="yb-circle-icon border border-white rounded-circle"><i class="fa fa-eye" aria-hidden="true"></i></span></div>
+                                            <div class="yb-excerpt">Labore et dolore magnam</div>
+                                            <div class="yb-cats">web</div>
+                                        </div>
+                                        <img src="assets/images/works/web-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="grid-item logo-design">
+                                    <div class="grid-item-content">
+                                        <div class="yb-overlay">
+                                            <div class="yb-icon-view mb-4"><span class="yb-circle-icon border border-white rounded-circle"><i class="fa fa-eye" aria-hidden="true"></i></span></div>
+                                            <div class="yb-excerpt">Labore et dolore magnam</div>
+                                            <div class="yb-cats">logo design</div>
+                                        </div>
+                                        <img src="assets/images/works/ld-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="grid-item wordpress">
+                                    <div class="grid-item-content">
+                                        <div class="yb-overlay">
+                                            <div class="yb-icon-view mb-4"><span class="yb-circle-icon border border-white rounded-circle"><i class="fa fa-eye" aria-hidden="true"></i></span></div>
+                                            <div class="yb-excerpt">Labore et dolore magnam</div>
+                                            <div class="yb-cats">wordpress</div>
+                                        </div>
+                                        <img src="assets/images/works/wp-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="grid-item ecommerce">
+                                    <div class="grid-item-content">
+                                        <div class="yb-overlay">
+                                            <div class="yb-icon-view mb-4"><span class="yb-circle-icon border border-white rounded-circle"><i class="fa fa-eye" aria-hidden="true"></i></span></div>
+                                            <div class="yb-excerpt">Labore et dolore magnam</div>
+                                            <div class="yb-cats">e-commerce</div>
+                                        </div>
+                                        <img src="assets/images/works/ec-1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div><!-- .row -->
+                </div><!-- .container-fluid -->
+
+            </section><!-- #work -->
+            <!-- See our work section End -->
+
+            <!-- Testimonials section -->
+            <section id="testimonials">
+                <div class="container">
+                    <div class="heading text-center mt-5">
+                        <h2 class="text-uppercase section-title yb-text-blue mb-0">Testimonials</h2>
+                        <p class="yb-section-title-icon yb-text-yellow"><i class="fa fa-comments-o" aria-hidden="true"></i></p>
+                    </div><!-- .heading -->
+                </div><!-- .container -->
+            </section><!-- #testimonials -->
+            <!-- Testimonials section End -->
+
+        </main>
+        <!-- ============== Main Section End ============== -->
+
+        <!-- ============== Footer Section ============== -->
+        <footer>
+            <!-- Footer Top -->
+            <section class="yb-footer-top yb-light-blue py-5">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <h2 class="yb-ft-logo-name text-white">yurBusiness</h2>
+                            <p class="yb-ft-p yb-text-light-gray">Donec vitae cursus quam. Etiam dignissim, nulla a congue auctor, massa urna cursus enim, id sodales elit ligula quis diam. Morbi ut semper augue. Fusce sit amet lectus turpis. Integer a cursus tellus, et imperdiet purus. Donec sed orci placerat, vulputate risus id, faucibus massa. Mauris justo arcu, faucibus at nunc quis</p>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <h2 class="yb-ft-heading text-white">Contact</h2>
+                            <p class="yb-ft-p yb-text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in so</p>
+                            <p class="yb-ft-contact-p mb-0"><span class="yb-font-size-20 yb-text-lighter-blue mr-4"><i class="fa fa-map-marker" aria-hidden="true"></i></span><span class="text-white">hyderabadh</span></p>
+                            <p class="yb-ft-contact-p mb-0"><span class="yb-font-size-20 yb-text-lighter-blue mr-3"><i class="fa fa-envelope" aria-hidden="true"></i></span><span class="text-white">info@company.com</span></p>
+                            <p class="yb-ft-contact-p mb-0"><span class="yb-font-size-20 yb-text-lighter-blue mr-4"><i class="fa fa-phone" aria-hidden="true"></i></span><span class="text-white">123 456 7890</span></p>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <h2 class="yb-ft-heading text-white">Latest Tweets</h2>
+                            <p class="yb-ft-p yb-text-light-gray">Donec vitae cursus quam. Etiam dignissim, nulla a congue auctor, massa urna cursus enim, id sodales elit ligula quis diam. Morbi ut semper augue. Fusce sit amet lectus turpis. Integer a cursus tellus, et imperdiet purus. Donec sed orci placerat, vulputate risus id, faucibus massa. Mauris justo arcu, faucibus at nunc quis</p>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <h2 class="yb-ft-heading text-white">Newsletter</h2>
+                            <p class="yb-ft-p yb-text-light-gray">Donec vitae cursus quam. Etiam dignissim, nulla a congue auctor, massa urna cursus enim, id sodales elit ligula quis diam. Morbi ut semper augue. Fusce sit amet lectus turpis. Integer a cursus tellus, et imperdiet purus. Donec sed orci placerat, vulputate risus id, faucibus massa. Mauris justo arcu, faucibus at nunc quis</p>
+                        </div>
+
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </section><!-- .yb-footer-top -->
+
+            <!-- Footer Bottom -->
+            <section class="yb-footer-bottom">
+
+            </section><!-- .yb-footer-bottom -->
+        </footer>
+        <!-- ============== Footer Section End ============== -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/popper.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/isotope.pkgd.min.js"></script>
+        <script src="/js/imagesloaded.pkgd.min.js"></script>
+        <script src="/js/main.js" type="text/javascript"></script>
+    </body>
+</html>
