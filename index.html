@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
     <head>
-        <title>Bootstrap 4 Layout</title>
+        <title>Faded</title>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,47 +10,51 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,800" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+        <link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet">
         <!-- Font Awesome -->
-        <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
         <!-- Boostrap -->
         <link rel="stylesheet" href="css/bootstrap.css">
         <!-- Custom Styles -->
         <link rel="stylesheet" href="css/styles.css">
     </head>
 
-    <body>
+    <body data-spy="scroll" data-target="#fd-main-nav" data-offset="70" class="position-relative">
         <!-- ============== Header Section ============== -->
-        <header>
+        <header id="top">
             
             <!-- Navigation Menu -->
-            <nav class="navbar navbar-expand-lg navbar-dark yb-main-menu fixed-top">
+            <nav id="fd-main-nav" class="navbar navbar-expand-lg navbar-dark fd-main-menu fixed-top">
                 <div class="container">
-                    <a class="navbar-brand logo-brand yb-text-yellow" href="/">yurBusiness</a>
+                    <a class="navbar-brand fd-logo-brand text-primary" href="/">Faded</a>
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <!--<span class="navbar-toggler-icon"></span>-->
+                        <span class="fd-burger-bar"></span>
+                        <span class="fd-burger-bar"></span>
+                        <span class="fd-burger-bar"></span>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#top">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Services</a>
+                                <a class="nav-link" href="#offer">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
+                                <a class="nav-link" href="#work">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Testimonials</a>
+                                <a class="nav-link" href="#testimonials">Testimonials</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -60,16 +64,16 @@
             <!-- Navigation Menu End -->                                                         
             
             <!-- Slider -->
-            <div id="carouselExampleIndicators" class="carousel slide position-ralative" data-ride="carousel">
+            <div id="fd-mainSlider" class="carousel slide position-ralative" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#fd-mainSlider" data-slide-to="0" class="active"></li>
+                    <li data-target="#fd-mainSlider" data-slide-to="1"></li>
+                    <li data-target="#fd-mainSlider" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="slider-image slide text-center text-white" style="background-image: url('assets/images/slider-1.jpg');">
-                            <div class="yb-bg-overlay"></div>
+                            <div class="fd-bg-overlay"></div>
                             <div class="container h-100">
                                 <div class="row h-100 align-items-center">
                                     <div class="col">
@@ -79,7 +83,7 @@
                                                 <p class="lead">Donec posuere augue venenatis</p>
                                             </div><!-- .text -->
                                             <div class="button mt-7">
-                                                <a class="btn btn-yb-blue btn-lg btn-font text-uppercase" href="#" role="button">show more</a>
+                                                <a class="btn btn-primary btn-lg btn-font text-uppercase" href="#" role="button">show more</a>
                                             </div><!-- .button -->
                                         </div><!-- .slider-text-block -->
                                     </div>
@@ -90,7 +94,7 @@
 
                     <div class="carousel-item">
                         <div class="slider-image slide text-center text-white" style="background-image: url('assets/images/slider-2.jpg');">
-                            <div class="yb-bg-overlay"></div>
+                            <div class="fd-bg-overlay"></div>
                             <div class="container h-100">
                                 <div class="row h-100 align-items-center">
                                     <div class="col">
@@ -100,7 +104,7 @@
                                                 <p class="lead">Donec posuere augue venenatis</p>
                                             </div><!-- .text -->
                                             <div class="button mt-7">
-                                                <a class="btn btn-yb-blue btn-lg btn-font text-uppercase" href="#" role="button">show more</a>
+                                                <a class="btn btn-primary btn-lg btn-font text-uppercase" href="#" role="button">show more</a>
                                             </div><!-- .button -->
                                         </div><!-- .slider-text-block -->
                                     </div>
@@ -111,7 +115,7 @@
 
                     <div class="carousel-item">
                         <div class="slider-image slide text-center text-white" style="background-image: url('assets/images/slider-3.jpg');">
-                            <div class="yb-bg-overlay"></div>
+                            <div class="fd-bg-overlay"></div>
                             <div class="container h-100">
                                 <div class="row h-100 align-items-center">
                                     <div class="col">
@@ -121,7 +125,7 @@
                                                 <p class="lead">Donec posuere augue venenatis</p>
                                             </div><!-- .text -->
                                             <div class="button mt-7">
-                                                <a class="btn btn-yb-blue btn-lg btn-font text-uppercase" href="#" role="button">show more</a>
+                                                <a class="btn btn-primary btn-lg btn-font text-uppercase" href="#" role="button">show more</a>
                                             </div><!-- .button -->
                                         </div><!-- .slider-text-block -->
                                     </div>
@@ -132,11 +136,11 @@
                 </div><!-- .carousel-inner -->
 
                 <div class="container">
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#fd-mainSlider" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#fd-mainSlider" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -150,94 +154,94 @@
         <!-- ============== Main Section ============== -->
         <main>
             <!-- What we offer section -->
-            <section id="offer" class="py-6">
+            <section id="offer" class="bg-dark py-6">
 
                 <div class="container">
                     <div class="heading text-center mb-6">
-                        <h2 class="text-uppercase section-title yb-text-blue">What we offer</h2>
-                        <p class="section-text yb-text-dark-blue">Vestibulum elementum ex ullamcorper ligula vulputate</p>
+                        <h2 class="text-uppercase section-title text-primary">Our Services</h2>
+                        <p class="section-text fd-text-light-300">Vestibulum elementum ex ullamcorper ligula vulputate</p>
                     </div><!-- .heading -->
 
                     <div class="row">
-                        <div class="col-12 col-sm-6 my-3">
+                        <div class="col-12 col-sm-6 fd-service my-3">
 
                             <div class="row">
                                 <div class="col-sm-1 text-sm-left text-center">
-                                    <i class="fa fa-wrench yb-text-yellow" aria-hidden="true"></i>
+                                    <i class="fas fa-wrench text-primary fd-offer-icon"></i>
                                 </div>
                                 <div class="col-sm-11 text-sm-left text-center">
-                                    <h4 class="offer-heading yb-text-dark-blue">Vivamus tincidunt</h4>
-                                    <p class="offer-text yb-text-gray">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
+                                    <h4 class="offer-heading fd-text-white-100">Vivamus tincidunt</h4>
+                                    <p class="offer-text fd-text-light-100">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
                                 </div>
                             </div><!-- .row -->
 
                         </div>
 
-                        <div class="col-12 col-sm-6 my-3">
+                        <div class="col-12 col-sm-6 fd-service my-3">
 
                             <div class="row">
                                 <div class="col-sm-1 text-sm-left text-center">
-                                    <i class="fa fa-cart-arrow-down yb-text-blue" aria-hidden="true"></i>
+                                    <i class="fas fa-shopping-cart text-primary fd-offer-icon"></i>
                                 </div>
                                 <div class="col-sm-11 text-sm-left text-center">
-                                    <h4 class="offer-heading yb-text-dark-blue">Etiam porttitor sagittis ipsum</h4>
-                                    <p class="offer-text yb-text-gray">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
-                                </div>
-                            </div><!-- .row -->
-                            
-                        </div>
-
-                        <div class="col-12 col-sm-6 my-3">
-
-                            <div class="row">
-                                <div class="col-sm-1 text-sm-left text-center">
-                                    <i class="fa fa-stack-exchange yb-text-blue" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-sm-11 text-sm-left text-center">
-                                    <h4 class="offer-heading yb-text-dark-blue">Vivamus tincidunt diam a iaculis</h4>
-                                    <p class="offer-text yb-text-gray">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
-                                </div>
-                            </div><!-- .row -->
-
-                        </div>
-
-                        <div class="col-12 col-sm-6 my-3">
-
-                            <div class="row">
-                                <div class="col-sm-1 text-sm-left text-center">
-                                    <i class="fa fa-television yb-text-blue" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-sm-11 text-sm-left text-center">
-                                    <h4 class="offer-heading yb-text-dark-blue">Donec metus augue</h4>
-                                    <p class="offer-text yb-text-gray">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
+                                    <h4 class="offer-heading fd-text-white-100">Etiam porttitor sagittis ipsum</h4>
+                                    <p class="offer-text fd-text-light-100">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
                                 </div>
                             </div><!-- .row -->
                             
                         </div>
 
-                        <div class="col-12 col-sm-6 my-3">
+                        <div class="col-12 col-sm-6 fd-service my-3">
 
                             <div class="row">
                                 <div class="col-sm-1 text-sm-left text-center">
-                                    <i class="fa fa-bug yb-text-blue" aria-hidden="true"></i>
+                                    <i class="fab fa-servicestack text-primary fd-offer-icon"></i>
                                 </div>
                                 <div class="col-sm-11 text-sm-left text-center">
-                                    <h4 class="offer-heading yb-text-dark-blue">Aliquam sed mollis</h4>
-                                    <p class="offer-text yb-text-gray">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
+                                    <h4 class="offer-heading fd-text-white-100">Vivamus tincidunt diam a iaculis</h4>
+                                    <p class="offer-text fd-text-light-100">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
                                 </div>
                             </div><!-- .row -->
 
                         </div>
 
-                        <div class="col-12 col-sm-6 my-3">
+                        <div class="col-12 col-sm-6 fd-service my-3">
 
                             <div class="row">
                                 <div class="col-sm-1 text-sm-left text-center">
-                                    <i class="fa fa-globe yb-text-blue" aria-hidden="true"></i>
+                                    <i class="fas fa-tv text-primary fd-offer-icon"></i>
                                 </div>
                                 <div class="col-sm-11 text-sm-left text-center">
-                                    <h4 class="offer-heading yb-text-dark-blue">Vestibulum placerat nisl quis</h4>
-                                    <p class="offer-text yb-text-gray">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
+                                    <h4 class="offer-heading fd-text-white-100">Donec metus augue</h4>
+                                    <p class="offer-text fd-text-light-100">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
+                                </div>
+                            </div><!-- .row -->
+                            
+                        </div>
+
+                        <div class="col-12 col-sm-6 fd-service my-3">
+
+                            <div class="row">
+                                <div class="col-sm-1 text-sm-left text-center">
+                                    <i class="fas fa-bug text-primary fd-offer-icon"></i>
+                                </div>
+                                <div class="col-sm-11 text-sm-left text-center">
+                                    <h4 class="offer-heading fd-text-white-100">Aliquam sed mollis</h4>
+                                    <p class="offer-text fd-text-light-100">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
+                                </div>
+                            </div><!-- .row -->
+
+                        </div>
+
+                        <div class="col-12 col-sm-6 fd-service my-3">
+
+                            <div class="row">
+                                <div class="col-sm-1 text-sm-left text-center">
+                                    <i class="fas fa-globe text-primary fd-offer-icon"></i>
+                                </div>
+                                <div class="col-sm-11 text-sm-left text-center">
+                                    <h4 class="offer-heading fd-text-white-100">Vestibulum placerat nisl quis</h4>
+                                    <p class="offer-text fd-text-light-100">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
                                 </div>
                             </div><!-- .row -->
                             
@@ -251,21 +255,21 @@
             <!-- What we offer section End -->
 
             <!-- Who we are section -->
-            <section id="about" class="yb-yellow">
+            <section id="about" class="">
 
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-sm-12 col-md-6 yb-bg-image-block" style="background-image: url('assets/images/about1.jpg');">
+                        <div class="col-12 col-sm-12 col-md-6 fd-bg-image-block" style="background-image: url('assets/images/about1.jpg');">
                             <!-- <img src="http://placeimg.com/640/480/people" alt="people"> -->
                         </div>
 
-                        <div class="col-12 col-sm-12 col-md-6 yb-text-block py-4 px-4 py-sm-5 px-sm-5 py-md-7 px-md-6">
+                        <div class="col-12 col-sm-12 col-md-6 fd-text-block py-4 px-4 py-sm-5 px-sm-5 py-md-7 px-md-6 fd-bg-grad">
                             <div class="row">
                                 <div class="col-12 col-sm-12 col-md-9">
-                                    <h2 class="text-uppercase section-title text-white">Who we are</h2>
+                                    <h2 class="text-uppercase section-title text-white">About us</h2>
                                     <p class="section-text text-white my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dui massa, condimentum a nisl quis, tristique efficitur erat. Aenean ut suscipit urna. Donec efficitur tristique lobortis. Nullam eu efficitur lacus, et blandit tellus. Mauris viverra condimentum tellus vitae sollicitudin. Mauris quis mattis urna. Suspendisse auctor magna quis ipsum ultrices scelerisque. Vestibulum quis hendrerit enim. Aenean viverra aliquam ex, sed ornare risus porta in.</p>
                                     <p class="section-text text-white my-4">Aenean ut suscipit urna. Donec efficitur tristique lobortis. Nullam eu efficitur lacus, et blandit tellus. Mauris viverra condimentum tellus vitae sollicitudin. Mauris quis mattis urna. Suspendisse auctor magna quis ipsum ultrices scelerisque. Vestibulum quis hendrerit enim. Aenean viverra aliquam ex, sed ornare risus porta in.</p>
-                                    <a class="btn btn-yb-yellow-burn btn-lg text-uppercase text-white btn-font mt-5 mb-3" href="#" role="button">Read more</a>
+                                    <a class="btn btn-dark btn-lg text-uppercase text-white btn-font mt-5 mb-3" href="#" role="button">Read more</a>
                                 </div>
                             </div><!-- .row -->
                         </div>
@@ -276,20 +280,20 @@
             <!-- Who we are section End -->
 
             <!-- See our work section -->
-            <section id="work" class="pb-3">
+            <section id="work" class="bg-dark pb-3 pt-6">
 
                 <div class="container">
-                    <div class="heading text-center mt-6">
-                        <h2 class="text-uppercase section-title yb-text-blue mb-0">See our work</h2>
-                        <p class="yb-section-title-icon yb-with-lines yb-text-yellow"><i class="fa fa-cog" aria-hidden="true"></i></p>
-                        <p class="section-text yb-text-dark-blue">Mauris euismod ac nulla vitae fermentum. Morbi ut mauris massa. Sed condimentum elit volutpat turpis sagittis, in scelerisque dui luctus. Nulla id suscipit velit, a maximus massa.</p>
+                    <div class="heading text-center">
+                        <h2 class="text-uppercase section-title text-primary mb-0">Our Work</h2>
+                        <p class="fd-section-title-icon fd-with-lines text-success"><i class="fas fa-cog"></i></p>
+                        <p class="section-text fd-text-light-300">Mauris euismod ac nulla vitae fermentum. Morbi ut mauris massa. Sed condimentum elit volutpat turpis sagittis, in scelerisque dui luctus. Nulla id suscipit velit, a maximus massa.</p>
                     </div><!-- .heading -->
                 </div><!-- .container -->
 
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col">
-                            <div class="yb-filter-button-group my-5 text-center">
+                            <div class="fd-filter-button-group my-5 text-center">
                                 <button class="btn btn-sm active" data-filter="*">All</button>
                                 <button class="btn btn-sm" data-filter=".web">Web</button>
                                 <button class="btn btn-sm" data-filter=".logo-design">Logo Design</button>
@@ -308,80 +312,80 @@
                                 <div class="gutter-sizer"></div>
                                 <div class="grid-item web">
                                     <div class="grid-item-content">
-                                        <div class="yb-overlay">
-                                            <div class="yb-icon-view mb-4"><span class="yb-circle-icon border border-white rounded-circle"><i class="fa fa-eye" aria-hidden="true"></i></span></div>
-                                            <div class="yb-excerpt">Labore et dolore magnam</div>
-                                            <div class="yb-cats">web</div>
+                                        <div class="fd-overlay">
+                                            <div class="fd-icon-view mb-4"><span class="fd-circle-icon border border-white rounded-circle"><i class="fas fa-eye"></i></span></div>
+                                            <div class="fd-excerpt">Labore et dolore magnam</div>
+                                            <div class="fd-cats">web</div>
                                         </div>
                                         <img src="assets/images/works/web-2.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="grid-item logo-design">
                                     <div class="grid-item-content">
-                                        <div class="yb-overlay">
-                                            <div class="yb-icon-view mb-4"><span class="yb-circle-icon border border-white rounded-circle"><i class="fa fa-eye" aria-hidden="true"></i></span></div>
-                                            <div class="yb-excerpt">Labore et dolore magnam</div>
-                                            <div class="yb-cats">logo design</div>
+                                        <div class="fd-overlay">
+                                            <div class="fd-icon-view mb-4"><span class="fd-circle-icon border border-white rounded-circle"><i class="fas fa-eye"></i></span></div>
+                                            <div class="fd-excerpt">Labore et dolore magnam</div>
+                                            <div class="fd-cats">logo design</div>
                                         </div>
                                         <img src="assets/images/works/ld-2.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="grid-item wordpress">
                                     <div class="grid-item-content">
-                                        <div class="yb-overlay">
-                                            <div class="yb-icon-view mb-4"><span class="yb-circle-icon border border-white rounded-circle"><i class="fa fa-eye" aria-hidden="true"></i></span></div>
-                                            <div class="yb-excerpt">Labore et dolore magnam</div>
-                                            <div class="yb-cats">wordpress</div>
+                                        <div class="fd-overlay">
+                                            <div class="fd-icon-view mb-4"><span class="fd-circle-icon border border-white rounded-circle"><i class="fas fa-eye"></i></span></div>
+                                            <div class="fd-excerpt">Labore et dolore magnam</div>
+                                            <div class="fd-cats">wordpress</div>
                                         </div>
                                         <img src="assets/images/works/wp-2.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="grid-item ecommerce">
                                     <div class="grid-item-content">
-                                        <div class="yb-overlay">
-                                            <div class="yb-icon-view mb-4"><span class="yb-circle-icon border border-white rounded-circle"><i class="fa fa-eye" aria-hidden="true"></i></span></div>
-                                            <div class="yb-excerpt">Labore et dolore magnam</div>
-                                            <div class="yb-cats">e-commerce</div>
+                                        <div class="fd-overlay">
+                                            <div class="fd-icon-view mb-4"><span class="fd-circle-icon border border-white rounded-circle"><i class="fas fa-eye"></i></span></div>
+                                            <div class="fd-excerpt">Labore et dolore magnam</div>
+                                            <div class="fd-cats">e-commerce</div>
                                         </div>
                                         <img src="assets/images/works/ec-2.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="grid-item web">
                                     <div class="grid-item-content">
-                                        <div class="yb-overlay">
-                                            <div class="yb-icon-view mb-4"><span class="yb-circle-icon border border-white rounded-circle"><i class="fa fa-eye" aria-hidden="true"></i></span></div>
-                                            <div class="yb-excerpt">Labore et dolore magnam</div>
-                                            <div class="yb-cats">web</div>
+                                        <div class="fd-overlay">
+                                            <div class="fd-icon-view mb-4"><span class="fd-circle-icon border border-white rounded-circle"><i class="fas fa-eye"></i></span></div>
+                                            <div class="fd-excerpt">Labore et dolore magnam</div>
+                                            <div class="fd-cats">web</div>
                                         </div>
                                         <img src="assets/images/works/web-1.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="grid-item logo-design">
                                     <div class="grid-item-content">
-                                        <div class="yb-overlay">
-                                            <div class="yb-icon-view mb-4"><span class="yb-circle-icon border border-white rounded-circle"><i class="fa fa-eye" aria-hidden="true"></i></span></div>
-                                            <div class="yb-excerpt">Labore et dolore magnam</div>
-                                            <div class="yb-cats">logo design</div>
+                                        <div class="fd-overlay">
+                                            <div class="fd-icon-view mb-4"><span class="fd-circle-icon border border-white rounded-circle"><i class="fas fa-eye"></i></span></div>
+                                            <div class="fd-excerpt">Labore et dolore magnam</div>
+                                            <div class="fd-cats">logo design</div>
                                         </div>
                                         <img src="assets/images/works/ld-1.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="grid-item wordpress">
                                     <div class="grid-item-content">
-                                        <div class="yb-overlay">
-                                            <div class="yb-icon-view mb-4"><span class="yb-circle-icon border border-white rounded-circle"><i class="fa fa-eye" aria-hidden="true"></i></span></div>
-                                            <div class="yb-excerpt">Labore et dolore magnam</div>
-                                            <div class="yb-cats">wordpress</div>
+                                        <div class="fd-overlay">
+                                            <div class="fd-icon-view mb-4"><span class="fd-circle-icon border border-white rounded-circle"><i class="fas fa-eye"></i></span></div>
+                                            <div class="fd-excerpt">Labore et dolore magnam</div>
+                                            <div class="fd-cats">wordpress</div>
                                         </div>
                                         <img src="assets/images/works/wp-1.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="grid-item ecommerce">
                                     <div class="grid-item-content">
-                                        <div class="yb-overlay">
-                                            <div class="yb-icon-view mb-4"><span class="yb-circle-icon border border-white rounded-circle"><i class="fa fa-eye" aria-hidden="true"></i></span></div>
-                                            <div class="yb-excerpt">Labore et dolore magnam</div>
-                                            <div class="yb-cats">e-commerce</div>
+                                        <div class="fd-overlay">
+                                            <div class="fd-icon-view mb-4"><span class="fd-circle-icon border border-white rounded-circle"><i class="fas fa-eye"></i></span></div>
+                                            <div class="fd-excerpt">Labore et dolore magnam</div>
+                                            <div class="fd-cats">e-commerce</div>
                                         </div>
                                         <img src="assets/images/works/ec-1.jpg" alt="">
                                     </div>
@@ -396,12 +400,61 @@
             <!-- See our work section End -->
 
             <!-- Testimonials section -->
-            <section id="testimonials">
+            <section id="testimonials" class="bg-dark pt-5 pb-6">
                 <div class="container">
-                    <div class="heading text-center mt-5">
-                        <h2 class="text-uppercase section-title yb-text-blue mb-0">Testimonials</h2>
-                        <p class="yb-section-title-icon yb-text-yellow"><i class="fa fa-comments-o" aria-hidden="true"></i></p>
+                    <div class="heading text-center mb-5">
+                        <h2 class="text-uppercase section-title text-primary mb-0">Testimonials</h2>
+                        <p class="fd-section-title-icon fd-with-lines text-success"><i class="fas fa-comments"></i></p>
                     </div><!-- .heading -->
+
+                    <div class="row justify-content-between">
+                        <div class="col-xs-12 col-sm-5">
+                            <div class="fd-comment">
+                                <blockquote class="blockquote mb-0">
+                                    <p class="text-white mb-0">&quot;Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consec tetur, adipisci velit, sed quia non numquam eius modi tempora incidunt utis labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minimas veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.&quot;</p>
+                                </blockquote>
+                                <p class="fd-user fd-text-white-100 mt-3 mb-0"><span class="fd-avatar text-primary pr-4"><i class="fas fa-user"></i></span><span class="fd-user-name text-primary">John Doe,</span><span class="fd-user-post"> FrontEnd Developer</span></p>
+                            </div><!-- .fd-comment -->
+                        </div>
+                        <div class="col-xs-12 col-sm-5">
+                            <div class="fd-comment">
+                                <blockquote class="blockquote mb-0">
+                                    <p class="text-white mb-0">&quot;Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consec tetur, adipisci velit, sed quia non numquam eius modi tempora incidunt utis labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minimas veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.&quot;</p>
+                                </blockquote>
+                                <p class="fd-user fd-text-white-100 mt-3 mb-0"><span class="fd-avatar text-primary pr-4"><i class="fas fa-user"></i></span><span class="fd-user-name text-primary">John Doe,</span><span class="fd-user-post"> FrontEnd Developer</span></p>
+                            </div><!-- .fd-comment -->
+                        </div>
+                    </div><!-- .row -->
+
+                </div><!-- .container -->
+            </section><!-- #testimonials -->
+            <!-- Testimonials section End -->
+
+            <!-- Contact section -->
+            <section id="contact" class="fd-bg-grad pt-5 pb-6">
+                <div class="container">
+                    <div class="heading text-center mb-5">
+                        <h2 class="text-uppercase section-title text-white mb-0">Get in touch</h2>
+                        <p class="fd-section-title-icon fd-with-lines text-white"><i class="fas fa-at"></i></p>
+                    </div><!-- .heading -->
+
+                    <form id="fd-contact-form-home">
+                        <div class="form-row">
+                            <div class="col">
+                                <p><input type="text" class="form-control" placeholder="Name"></p>
+                                <p><input type="email" class="form-control" placeholder="Email"></p>
+                            </div>
+                            <div class="col">
+                                <p><textarea class="form-control" aria-label="Message" placeholder="Message"></textarea></p>
+                            </div>
+                        </div>
+                        <div class="form-row mt-3">
+                            <div class="col text-center">
+                                <button type="submit" class="btn fd-circle-btn"><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </form>
+
                 </div><!-- .container -->
             </section><!-- #testimonials -->
             <!-- Testimonials section End -->
@@ -412,48 +465,114 @@
         <!-- ============== Footer Section ============== -->
         <footer>
             <!-- Footer Top -->
-            <section class="yb-footer-top yb-light-blue py-5">
+            <section class="fd-footer-top bg-light py-5">
                 <div class="container">
                     <div class="row">
 
                         <div class="col-12 col-sm-6 col-md-3">
-                            <h2 class="yb-ft-logo-name text-white">yurBusiness</h2>
-                            <p class="yb-ft-p yb-text-light-gray">Donec vitae cursus quam. Etiam dignissim, nulla a congue auctor, massa urna cursus enim, id sodales elit ligula quis diam. Morbi ut semper augue. Fusce sit amet lectus turpis. Integer a cursus tellus, et imperdiet purus. Donec sed orci placerat, vulputate risus id, faucibus massa. Mauris justo arcu, faucibus at nunc quis</p>
+                            <h2 class="fd-ft-logo-name fd-text-white-100">Faded</h2>
+                            <p class="fd-ft-p fd-text-light-300">Donec vitae cursus quam. Etiam dignissim, nulla a congue auctor, massa urna cursus enim, id sodales elit ligula quis diam. Morbi ut semper augue. Fusce sit amet lectus turpis. Integer a cursus tellus, et imperdiet purus. Donec sed orci placerat, vulputate risus id, faucibus massa. Mauris justo arcu, faucibus at nunc quis</p>
                         </div>
 
                         <div class="col-12 col-sm-6 col-md-3">
-                            <h2 class="yb-ft-heading text-white">Contact</h2>
-                            <p class="yb-ft-p yb-text-light-gray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in so</p>
-                            <p class="yb-ft-contact-p mb-0"><span class="yb-font-size-20 yb-text-lighter-blue mr-4"><i class="fa fa-map-marker" aria-hidden="true"></i></span><span class="text-white">hyderabadh</span></p>
-                            <p class="yb-ft-contact-p mb-0"><span class="yb-font-size-20 yb-text-lighter-blue mr-3"><i class="fa fa-envelope" aria-hidden="true"></i></span><span class="text-white">info@company.com</span></p>
-                            <p class="yb-ft-contact-p mb-0"><span class="yb-font-size-20 yb-text-lighter-blue mr-4"><i class="fa fa-phone" aria-hidden="true"></i></span><span class="text-white">123 456 7890</span></p>
+                            <h2 class="fd-ft-heading fd-text-white-100">Contact</h2>
+                            <p class="fd-ft-p fd-text-light-300">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in so</p>
+                            <div class="row mb-2">
+                                <div class="col-1">
+                                    <span class="fd-font-size-20 text-success fd-addr-icon"><i class="fas fa-map-marker-alt"></i></span>
+                                </div>
+                                <div class="col-9 ml-2">
+                                    <span class="fd-text-white-100">7 rue tronchet, 75008 paris, France</span>
+                                </div>
+                            </div><!-- .row -->
+                            <div class="row mb-2">
+                                <div class="col-1">
+                                    <span class="fd-font-size-20 text-success fd-addr-icon"><i class="fas fa-envelope"></i></span>
+                                </div>
+                                <div class="col-9 ml-2">
+                                    <span class="fd-text-white-100">info@yurbusiness.fr</span>
+                                </div>
+                            </div><!-- .row -->
+                            <div class="row mb-2">
+                                <div class="col-1">
+                                    <span class="fd-font-size-20 text-success fd-addr-icon"><i class="fas fa-phone"></i></span>
+                                </div>
+                                <div class="col-9 ml-2">
+                                    <span class="fd-text-white-100">08 92 97 61 44</span>
+                                </div>
+                            </div><!-- .row -->
                         </div>
 
                         <div class="col-12 col-sm-6 col-md-3">
-                            <h2 class="yb-ft-heading text-white">Latest Tweets</h2>
-                            <p class="yb-ft-p yb-text-light-gray">Donec vitae cursus quam. Etiam dignissim, nulla a congue auctor, massa urna cursus enim, id sodales elit ligula quis diam. Morbi ut semper augue. Fusce sit amet lectus turpis. Integer a cursus tellus, et imperdiet purus. Donec sed orci placerat, vulputate risus id, faucibus massa. Mauris justo arcu, faucibus at nunc quis</p>
+                            <h2 class="fd-ft-heading fd-text-white-100">Latest Tweets</h2>
+                            <ul class="fd-tweets">
+                                <li class="fd-tweet">
+                                    <p class="fd-ft-p fd-text-light-300 fd-tweet-excerpt">Curabitur felis nibh, lacinia non rhoncus vel, lobortis et lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
+                                    <p class="fd-ft-p text-success fd-tweet-time">5 Hours Ago</p>
+                                </li>
+                                <li class="fd-tweet">
+                                    <p class="fd-ft-p fd-text-light-300 fd-tweet-excerpt">Curabitur felis nibh, lacinia non rhoncus vel, lobortis et lorem. Class aptent taciti sociosqu ad litora torquent</p>
+                                    <p class="fd-ft-p text-success fd-tweet-time">6 Hours Ago</p>
+                                </li>
+                            </ul>
                         </div>
 
                         <div class="col-12 col-sm-6 col-md-3">
-                            <h2 class="yb-ft-heading text-white">Newsletter</h2>
-                            <p class="yb-ft-p yb-text-light-gray">Donec vitae cursus quam. Etiam dignissim, nulla a congue auctor, massa urna cursus enim, id sodales elit ligula quis diam. Morbi ut semper augue. Fusce sit amet lectus turpis. Integer a cursus tellus, et imperdiet purus. Donec sed orci placerat, vulputate risus id, faucibus massa. Mauris justo arcu, faucibus at nunc quis</p>
+                            <h2 class="fd-ft-heading fd-text-white-100">Newsletter</h2>
+                            <p class="fd-ft-p fd-text-light-300">Type your email address below and recive our daily news letter for free</p>
+                            <form id="fd-newsletter-form" class="fd-form" action="#" method="post">
+                                <div class="input-group mb-3">
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                      <button id="btnSubmit" class="btn" type="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
 
                     </div><!-- .row -->
                 </div><!-- .container -->
-            </section><!-- .yb-footer-top -->
+            </section><!-- .fd-footer-top -->
 
             <!-- Footer Bottom -->
-            <section class="yb-footer-bottom">
+            <section class="fd-footer-bottom py-4 fd-light-600">
+                <div class="container">
+                    <div class="row">
 
-            </section><!-- .yb-footer-bottom -->
+                        <div class="col-12 col-sm-4">
+                            <p class="fd-ft-p fd-text-light-300 pt-1 mb-0 text-center text-sm-left">&copy; 2018 yurBusiness. All rights reserved</p>
+                        </div>
+
+                        <div class="col-12 col-sm-4">
+                            <p class="fd-ft-p fd-text-light-300 text-center pt-1 mb-0">Designed by Dean Nab</p>
+                        </div>
+
+                        <div class="col-12 col-sm-4">
+                            <div class="text-center text-sm-right text-white">
+                                <a href="#" class="fd-social-icon-sq fd-highlighted"><span class="fd-twitter"><i class="fab fa-twitter"></i></span></a>
+                                <a href="#" class="fd-social-icon-sq"><span class="fd-facebook"><i class="fab fa-facebook-f"></i></span></a>
+                                <a href="#" class="fd-social-icon-sq"><span class="fd-linkedin"><i class="fab fa-linkedin-in"></i></span></a>
+                            </div>
+                        </div>
+
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </section><!-- .fd-footer-bottom -->
+
         </footer>
+
+        <!-- ============== Back to Top button ============== -->
+        <div class="fd-back-to-top hide">
+            <a href="#top" class=""><i class="fas fa-arrow-up"></i></a>
+        </div>
+
+
         <!-- ============== Footer Section End ============== -->
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/isotope.pkgd.min.js"></script>
         <script src="js/imagesloaded.pkgd.min.js"></script>
-        <script src="js/main.js" type="text/javascript"></script>
+        <script src="js/main.js" type="text/javascript"></script>   
     </body>
 </html>
